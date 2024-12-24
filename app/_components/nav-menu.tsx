@@ -31,13 +31,15 @@ export function NavMenu() {
         </SheetHeader>
         <div className="mt-6 flex flex-col gap-4">
           {menuItems.map((item) => (
-            <Link
+            <a
               key={item.name}
               href={item.href}
               className="text-lg hover:text-primary transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {item.name}
-            </Link>
+            </a>
           ))}
         </div>
       </SheetContent>
